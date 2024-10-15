@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "author" content = "sylvia Kizito">
+        <meta name = "description" content = "This page contains what im learning on HTML as a first timer">
+        <meta name = "inspiration" content = "God">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <title>personal portfolio</title>
+       <script src="https://kit.fontawesome.com/9c39db15eb.js" crossorigin="anonymous"></script>
+       <link rel = "icon" href ="html logo.png" type = "image/x-icon">
+       <link rel="stylesheet" href="file.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="skbg.png" class="logo" width="400" height="200">
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#servant">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    
+                </nav>
+                <div class="header-text">
+                    <p> Web Developer & Tech Support Specialist</p>
+                    <h1>Hello, My name is <span>Sylvia Kizito</span><br> from Kenya.</h1>
+                </div>
+            </div>
+        </div>
+        <!--about-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Professional2.png" width="400" height="400">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="title">About Me</h1>
+                        <p><strong> Welcome to my Portfolio!</strong> <br>
+
+                            Hi! I’m Sylvia Kizito, a passionate Technical Support Specialist and Web Developer with a diverse background in both technology and customer service. With a strong foundation in HTML, CSS, JavaScript, and Python, I create seamless, user-centered websites and applications that combine aesthetics with functionality. My technical expertise also extends to troubleshooting hardware, software, and network issues, ensuring smooth, reliable IT environments. I’m always driven by my passion for problem-solving and delivering exceptional service. Let's create something amazing together!
+
+
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Developer</span><br>Web app development</li>
+                                    <li><span>Front-End-Developer</span><br> create the visual and interactive aspects of a website or web application that users directly engage with.</li>
+                                    <li><span>Tech Support Specialist</span><br>Provide assistance and troubleshoot issues related to technology for users</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Jan 2024- May 2024</span><br>Technical support Attachee at Mombasa Law Courts</li>
+                                    <li><span>2020 - 2022</span><br> Receptionist/Administrator at Laazizi Logistics and supplies.</li>
+                                    <li><span>2020 - 2023</span><br>Founder and operator at Heavens Best Look</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2024</span><br>Certificate course at Harvard cs50 by EDX</li>
+                                    <li><span>2022</span><br> Diploma in information Technology at Catholic University of East and Eastern Africa</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------Services---------------->
+        <div id="servant">
+            <div class="containers">
+                <h1 class="title">My Services</h1>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Web Developer</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Design users interfaces, writing clean code ,ensure that the site functions smoothly across devices and browsers, maintains and updates the site.</p>
+                            <a href="#" type="button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <i class="fa-solid fa-code-merge"></i>
+                            <h3>Technical Support Specialist</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Provides assistance to users by troubleshooting and resolving technical issues related to software, hardware, and networks. I handle customer inquiries, offer step-by-step solutions, and ensure systems run smoothly. </p>
+                            <a href="#" type="button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------Portfolio--------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="web1.jpg" width="300" height="300">
+                        <div class="layer">
+                            <h3>Travelling Website</h3>
+                            <p>The website features Kenya's destinations and hotels to visit during a clients stay. </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="web2.jpg" width="300" height="300">
+                        <div class="layer">
+                            <h3>Recipe App</h3>
+                            <p>The app allows users to write, save, edit, delete recipes</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="web3.jpg" width="300" height="300">
+                        <div class="layer">
+                            <h3>System Set up and configuration</h3>
+                            <p>Helped to Configure and deployed a network for an institution with many workstations, ensuring all systems were connected securely and efficiently</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-----------Contact me-------------->
+        <div id="contact">
+            <div class="container">
+               <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sylviakizito.77@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +254768469546</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/me/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.linkedin.com/in/sylvia-kizito-508aa4165"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/account"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="sylvia Adoyo Kizito resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" placeholder="Your message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+               </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ SylviaKizito Made with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+  
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyq_j1PHx18lJOa3XBVxjfKyLkM_z5cMZ9rQPyZAlft2mNtj5_z_iycyPAr6Unrlf4ebA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML =""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        
+    </body>
+</html>
